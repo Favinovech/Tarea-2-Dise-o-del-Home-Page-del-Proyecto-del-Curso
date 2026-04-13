@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor Épico | Restaurante de Alta Cocina</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Sabor<span>Épico</span></h1>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#menu">Menú</a>
+                <a href="#reservas" class="btn-nav">Reservar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>El Arte de la Alta Gastronomía</h2>
+                <p>Descubre sabores que despertarán todos tus sentidos en un ambiente inigualable.</p>
+                <a href="#menu" class="btn-primary">Ver Menú Completo</a>
+            </div>
+        </section>
+
+        <section id="nosotros" class="about section-container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Nuestra Historia</h2>
+                    <p>Desde 1998, <strong>Sabor Épico</strong> ha redefinido la cocina de autor. Fusionamos ingredientes locales y frescos con técnicas culinarias de vanguardia para ofrecerte una experiencia inolvidable.</p>
+                    <p>Cada plato cuenta una historia, cada bocado es una obra de arte.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chef cocinando en restaurante">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu section-container bg-light">
+            <div class="section-title">
+                <h2>Nuestras Especialidades</h2>
+                <p>Platos diseñados para deleitar tu paladar</p>
+            </div>
+
+            <div class="menu-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Ensalada Mediterránea">
+                    <div class="card-content">
+                        <h3>Ensalada Mediterránea</h3>
+                        <p class="desc">Fresca combinación de orgánicos, queso feta, aceitunas kalamata y vinagreta balsámica.</p>
+                        <span class="price">$15.00</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1560684352-8497838a2229?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Salmón Glaseado">
+                    <div class="card-content">
+                        <h3>Salmón Glaseado</h3>
+                        <p class="desc">Salmón noruego con glaseado de miel y mostaza, acompañado de espárragos trufados.</p>
+                        <span class="price">$32.00</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Corte Ribeye">
+                    <div class="card-content">
+                        <h3>Corte Ribeye Premium</h3>
+                        <p class="desc">400g de Ribeye madurado a la parrilla con mantequilla de finas hierbas.</p>
+                        <span class="price">$45.00</span>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c8a9e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Postre de Chocolate">
+                    <div class="card-content">
+                        <h3>Volcán de Chocolate</h3>
+                        <p class="desc">Bizcocho caliente con centro líquido de cacao al 70%, servido con helado de vainilla.</p>
+                        <span class="price">$12.00</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="reservas" class="reservations section-container">
+            <div class="form-container">
+                <h2>Reserva tu Mesa</h2>
+                <p>Asegura tu lugar en una experiencia culinaria única.</p>
+                
+                <form action="#" class="reservation-form">
+                    <div class="input-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" placeholder="Ej: Juan Pérez" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="hora">Hora</label>
+                            <input type="time" id="hora" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="personas">Personas</label>
+                            <input type="number" id="personas" min="1" max="20" placeholder="2" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary form-btn">Confirmar Reserva</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2 class="logo" style="color: white;">Sabor<span>Épico</span></h2>
+                <p>Donde la pasión por la comida se encuentra con la excelencia en el servicio.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Horarios</h3>
+                <p>Lunes - Viernes: 12:00 PM - 11:00 PM</p>
+                <p>Sábado - Domingo: 1:00 PM - 12:00 AM</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contacto</h3>
+                <p>📍 Av. Gastronomía 123, Ciudad</p>
+                <p>📞 +123 456 7890</p>
+                <p>✉️ reservas@saborepico.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sabor Épico. Todos los derechos reservados. | Creado con HTML5 y CSS3.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
