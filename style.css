@@ -1,0 +1,186 @@
+/* VARIABLES GLOBALES */
+:root {
+    --primary: #FF441F;
+    --primary-hover: #E33916;
+    --dark: #1A1A1A;
+    --light-grey: #F4F7F6;
+    --white: #FFFFFF;
+    --shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    background-color: var(--white);
+    scroll-behavior: smooth;
+}
+
+#root { max-width: 1280px; margin: 0 auto; }
+
+/* NAVEGACIÓN */
+.navbar {
+    background: var(--white);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { font-size: 1.6rem; font-weight: 700; color: var(--dark); }
+.logo span { color: var(--primary); }
+
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; }
+
+.btn-nav {
+    border: 2px solid var(--primary);
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    color: var(--primary) !important;
+}
+
+/* HERO SECTION - CORREGIDO PARA EVITAR FONDO NEGRO */
+.hero {
+    /* Fondo degradado animado (Naranja a Rojo oscuro) */
+    background: linear-gradient(135deg, #ffa21fee 0%, #8b0000 100%);
+    background-size: 200% 200%;
+    animation: moverFondo 6s ease infinite;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 1.5rem;
+}
+
+@keyframes moverFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 { 
+    font-size: 3.5rem; 
+    line-height: 1.2; 
+    margin-bottom: 1.5rem; 
+    font-weight: 700;
+}
+
+.hero strong { color: #FFD700; } /* Dorado para resaltar */
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* GRID Y TARJETAS */
+.section-padding { padding: 5rem 2rem; }
+.section-title { text-align: center; margin-bottom: 3.5rem; }
+
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-card {
+    background: var(--white);
+    width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.service-card:hover { transform: translateY(-10px); }
+.service-card img { width: 100%; height: 200px; object-fit: cover; }
+.card-info { padding: 1.5rem; }
+
+/* SECCIÓN OSCURA */
+.bg-dark { 
+    background-color: var(--dark); 
+    color: white; 
+    border-radius: 20px; 
+    margin: 0 1rem; 
+}
+
+.feature-item { flex: 1; min-width: 250px; padding: 2.5rem; text-align: center; }
+.feature-item .icon { font-size: 3rem; margin-bottom: 1rem; display: block; }
+
+/* FORMULARIO */
+.form-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: var(--light-grey);
+    border-radius: 20px;
+}
+
+.input-group { margin-bottom: 1.5rem; display: flex; flex-direction: column; }
+.input-row { display: flex; gap: 1.5rem; }
+label { font-weight: 600; margin-bottom: 0.5rem; }
+
+input, select {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* BOTONES */
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--dark);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.full-width { width: 100%; }
+
+.footer { text-align: center; padding: 3rem; background: #eee; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero h2 { font-size: 2.2rem; }
+    .input-row { flex-direction: column; }
+}

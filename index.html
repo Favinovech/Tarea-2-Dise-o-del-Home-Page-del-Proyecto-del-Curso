@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappi Perú | Gestión de Delivery Rappi Perú</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Rappi<span>Perú</span></h1>
+            <nav class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#afiliacion">Afiliar Negocio</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#" class="btn-nav">Descargar App</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="root">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Todo lo que necesitas, <strong>en minutos</strong></h2>
+                <p>La plataforma líder en Perú para delivery de restaurantes, supermercados y farmacias. Gestión logística inteligente a tu alcance.</p>
+                <div class="hero-btns">
+                    <a href="#servicios" class="btn-primary">Pedir ahora</a>
+                    <a href="#afiliacion" class="btn-secondary">Unirse como socio</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section-padding">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Conectamos comercios con clientes en todo el país.</p>
+            </div>
+            <div class="grid-layout">
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500&q=80" alt="Restaurantes">
+                    <div class="card-info">
+                        <h3>Restaurantes</h3>
+                        <p>Platos locales y cadenas internacionales entregados con rapidez.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=80" alt="Supermercados">
+                    <div class="card-info">
+                        <h3>Supermercados</h3>
+                        <p>Toda tu lista de compras entregada directamente en tu puerta.</p>
+                    </div>
+                </article>
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1586015555751-63bb77f4322a?auto=format&fit=crop&w=500&q=80" alt="Farmacias">
+                    <div class="card-info">
+                        <h3>Farmacias</h3>
+                        <p>Salud y bienestar disponibles las 24 horas del día.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="beneficios" class="features section-padding bg-dark">
+            <div class="grid-layout">
+                <div class="feature-item">
+                    <div class="icon">📍</div>
+                    <h3>Seguimiento Real</h3>
+                    <p>Precisión total en los tiempos de entrega con GPS.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <h3>Eficiencia</h3>
+                    <p>Optimización inteligente para entregas ultra rápidas.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🛡️</div>
+                    <h3>Seguridad</h3>
+                    <p>Pagos 100% encriptados y procesos certificados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="afiliacion" class="form-section section-padding">
+            <div class="form-card">
+                <h2>Afiliar mi negocio</h2>
+                <p>Únete a la red más grande de Perú.</p>
+                <form class="reservation-form">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Nombre del Negocio</label>
+                            <input type="text" placeholder="Ej: Mi Market" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Categoría</label>
+                            <select>
+                                <option>Restaurante</option>
+                                <option>Supermercado</option>
+                                <option>Farmacia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" placeholder="contacto@empresa.com" required>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Enviar Solicitud</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Proyecto DAW | Rappi Perú</p>
+    </footer>
+
+</body>
+</html>
